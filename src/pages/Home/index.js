@@ -100,7 +100,6 @@ const mylist = [
     }
 ];
 
-
 // Componente Home
 // exportando o componente default TEM que ser letra maiúscula a inicial
 export default function Home() {
@@ -118,12 +117,9 @@ export default function Home() {
                 style={styles.list}
                 data={mylist} // DADOS QUE SERAO UTILIZADOS NA LISTA
                 keyExtractor={item => item.date} // CHAVE DE BUSCA PARA ATUALIZAR OS DADOS
-                renderItem={({ item }) => <Forecast data={item}/>} // RENDERIZAÇÃO DE CADA ITEM DA LISTA
-                horizontal= {true}
-                contentContainerStyle={{paddingHorizontal: '5%'}}
-                // width= '85%'
-                // marginBottom='5%'
-                // marginTop='5%'
+                renderItem={({ item }) => <Forecast data={item} />} // RENDERIZAÇÃO DE CADA ITEM DA LISTA
+                horizontal={true}
+                contentContainerStyle={{ padding: '4%' }}
             />
         </SafeAreaView>
     )
@@ -136,10 +132,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#e9f0ff',
-        paddingTop: '5%'
+        paddingTop: '6%'
     },
     list: {
-        backgroundColor: "white", borderRadius: 15,
-        margin: 10, flexDirection: 'row',
+        marginTop: 10, flexDirection: 'row',
+        marginBottom: 10, marginLeft: 0,
     }
 })
