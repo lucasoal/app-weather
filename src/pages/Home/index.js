@@ -141,7 +141,7 @@ export default function Home() {
                 renderItem={({ item }) => <Forecast data={item} />} // RENDERIZAÇÃO DE CADA ITEM DA LISTA
                 horizontal={true}
                 contentContainerStyle={{ padding: '3%' }}
-                width= "100%"
+                width="100%"
             />
         </SafeAreaView>
     )

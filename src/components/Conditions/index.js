@@ -39,9 +39,14 @@ export default function Conditions({ weather }) {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: "8%", padding: 15,
+        // marginTop: "8%", padding: 15,
+        // backgroundColor: "#FFF",
+        // width: "85%", height: "12%",
+        // borderRadius: 15, flexDirection: 'row',
+        // justifyContent: 'space-around', color: '#0f2f61'
+        marginTop: 20, padding: 5,
         backgroundColor: "#FFF",
-        width: "85%", height: "12%",
+        width: "85%", height: 70,
         borderRadius: 15, flexDirection: 'row',
         justifyContent: 'space-around', color: '#0f2f61'
     },
@@ -49,6 +54,6 @@ const styles = StyleSheet.create({
         alignItems: 'center', justifyContent: 'center', color: '#0f2f61'
     },
     text: {
-        color: '#0f2f61'
+        color: '#0f2f61', fontSize: 13
     }
 })
