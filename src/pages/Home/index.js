@@ -3,6 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native'; // importando estruturas de texto e view de tela
 import { SafeAreaView } from 'react-native'; // controle do notch em mobile
+
+// IMPORTANDO API
+import api, { key } from '../../services/api';
+
 import { Ionicons, Feather, MaterialCommunityIcons } from '@expo/vector-icons';
 
 // IMPORTANDO TODAS(*) AS DISPONIBILIDADES DO EXPO LOCATION
@@ -19,9 +23,6 @@ import Conditions from '../../components/Conditions';
 
 // IMPORTANDO O FORECAST
 import Forecast from '../../components/Forecast';
-
-// IMPORTANDO API
-import api, { key } from '../../services/api';
 
 // Componente Home
 // exportando o componente default TEM que ser letra maiúscula a inicial
@@ -119,8 +120,16 @@ export default function Home() {
 
     if (loading === true) {
         return (
-            <View style={styles.container}>
-                <Text style={{ fontSize: 17, fontStyle: 'italic' }}>Carregando dados...</Text>
+            <View style={styles.loading}>
+                <Text style={{
+                    fontSize: 20,
+                    fontStyle: 'italic', color: 'white'
+                }}>Carregando dados...</Text>
+                <Text style={{
+                    fontSize: 20,
+                    fontStyle: 'italic', color: 'white',
+                    marginTop: '5%'
+                }}>Caso haja demora no carregamento, é possível que o servidor esteja fora do ar.</Text>
             </View>
         )
     };
@@ -159,5 +168,10 @@ const styles = StyleSheet.create({
     list: {
         marginTop: 10, flexDirection: 'row',
         marginBottom: 10, marginLeft: 0,
+    },
+    loading: {
+        flex: 1, backgroundColor: '#0f2f61',
+        alignItems: 'center', justifyContent: 'center',
+        padding: 20,
     }
 })

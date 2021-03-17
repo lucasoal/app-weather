@@ -46,7 +46,6 @@ export default function Search() {
             Keyboard.dismiss();
             return;
         }
-
         setCity(response.data);
         setInput('');
         Keyboard.dismiss();
