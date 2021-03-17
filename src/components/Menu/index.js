@@ -23,7 +23,7 @@ export default function Menu() {
             <Feather
                 name='menu'
                 size={36}
-                color='black'
+                color='#0f2f61'
             />
 
         </TouchableOpacity>
@@ -37,9 +37,9 @@ const styles = StyleSheet.create({
         width: 70, height: 70,
         backgroundColor: 'white',
         alignItems: 'center', justifyContent: 'center',
-        left: 20, top: 40,
+        left: '5%', top: '2%',
         borderTopLeftRadius: 10, borderTopRightRadius: 50,
         borderBottomLeftRadius: 50, borderBottomRightRadius: 50,
-        elevation: 5
+        elevation: 5,
     }
 });

@@ -7,7 +7,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons, Feather, MaterialCommunityIcons } from '@expo/vector-icons';
 
 // IMPORTA FUNÇÃO DE CONTROLE DE ICONES
-import  { condition }  from '../../utils/condition';
+import { condition } from '../../utils/condition';
 
 export default function Forecast({ data }) {
 
@@ -21,8 +21,8 @@ export default function Forecast({ data }) {
             <MaterialCommunityIcons name={icon.name} color={icon.color} size={30} />
 
             <View style={styles.temp}>
-                <Text style={{ fontWeight: "bold", fontSize: 20 }}>{data.max}°</Text>
-                <Text style={{ fontStyle: 'italic', fontSize: 15 }}>{data.min}°</Text>
+                <Text style={{ fontWeight: "bold", fontSize: 20, color: '#0f2f61' }}>{data.max}°</Text>
+                <Text style={{ fontStyle: 'italic', fontSize: 15, color: '#0f2f61' }}>{data.min}°</Text>
             </View>
         </View>
     )
@@ -34,12 +34,15 @@ const styles = StyleSheet.create({
         marginLeft: 12, borderRadius: 15,
         paddingTop: 10, paddingBottom: 10,
         paddingLeft: 15, paddingRight: 15,
-        alignItems: 'center', justifyContent: 'space-around'
+        alignItems: 'center', justifyContent: 'space-around',
     },
     weekday: {
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
     temp: {
         alignItems: 'center',
+    },
+    date: {
+        color: '#0f2f61'
     }
 });

@@ -4,34 +4,34 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 // IMPORTANDO ICONES
-import { Feather, MaterialCommunityIcons } from '@expo/vector-icons';
+import { Ionicons, Feather, MaterialCommunityIcons } from '@expo/vector-icons';
 
-export default function Conditions() {
+export default function Conditions({ weather }) {
     return (
         // CONTAINER QUE FICARA AS CONDIÇÕES
         <View style={styles.container}>
             {/* CONDIÇÕES INDIVIDUAIS */}
             <View style={styles.conditions}>
-                <Feather size={23} name="wind" color="#1ed6ff" />
-                <Text>7km/h</Text>
+                <Feather size={23} name="wind" color="#0f2f61" />
+                <Text style={styles.text}>{weather.wind_speedy}</Text>
             </View>
 
             {/* CONDIÇÕES INDIVIDUAIS */}
             <View style={styles.conditions}>
-                <Feather size={23} name="sunrise" color="#1ed6ff" />
-                <Text>6:32am</Text>
+                <Feather size={23} name="sunrise" color="#0f2f61" />
+                <Text style={styles.text}>{weather.sunrise}</Text>
             </View>
 
             {/* CONDIÇÕES INDIVIDUAIS */}
             <View style={styles.conditions}>
-                <Feather size={23} name="sunset" color="#1ed6ff" />
-                <Text>6:50pm</Text>
+                <Feather size={23} name="sunset" color="#0f2f61" />
+                <Text style={styles.text}>{weather.sunset}</Text>
             </View>
 
             {/* CONDIÇÕES INDIVIDUAIS */}
             <View style={styles.conditions}>
-                <Feather size={23} name="droplet" color="#1ed6ff" />
-                <Text>80%</Text>
+                <Ionicons size={23} name="water-outline" color="#0f2f61" />
+                <Text style={styles.text}>{weather.humidity}%</Text>
             </View>
         </View>
     )
@@ -39,13 +39,16 @@ export default function Conditions() {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: "5%", padding: 15,
+        marginTop: "8%", padding: 15,
         backgroundColor: "#FFF",
         width: "85%", height: "12%",
         borderRadius: 15, flexDirection: 'row',
-        justifyContent: 'space-around'
+        justifyContent: 'space-around', color: '#0f2f61'
     },
     conditions: {
-        alignItems: 'center', justifyContent: 'center'
+        alignItems: 'center', justifyContent: 'center', color: '#0f2f61'
+    },
+    text: {
+        color: '#0f2f61'
     }
 })
