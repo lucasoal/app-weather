@@ -1,5 +1,5 @@
 
-# <img src="media/logotype.png" width="20%"> [<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo" width="25" Title="JavaScript" align='right'>](https://www.javascript.com/) [<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg" alt= "React Native Logo" width="27" Title="React Native" align='right'>](https://reactjs.org/) [<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Android_logo_2019.png" alt= "Android Logo" width="28" Title="Android" align='right'>](https://www.android.com/intl/pt-BR_br/) 
+# <img src="media/logotype.png" width="20%"> [<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo" width="25" Title="JavaScript" align='right'>](https://www.javascript.com/) [<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg" alt= "React Native Logo" width="27" Title="React Native" align='right'>](https://reactjs.org/) [<img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt= "Android Logo" width="28" Title="Android" align='right'>](https://www.android.com/intl/pt-BR_br/) 
 
 
 *My first and simple project developed and focused for mobile. Study about APIs, Frameworks and new languages.*
